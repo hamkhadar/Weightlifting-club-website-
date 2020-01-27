@@ -1,0 +1,514 @@
+/* site.css */
+
+/* Fonts */
+
+@font-face {
+  font-family: 'Bebas-Neue';
+  src: url(../fonts/BebasNeue-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Bebas-Neue';
+  src: url(../fonts/BebasNeue-Regular.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Semibold.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-weight: normal;
+}
+
+/* Typography */
+
+h1 {
+  font-family: 'Bebas-Neue', sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Bebas-Neue', sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  margin-top: 0;
+}
+
+body, p, li {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+/* Layout */
+.page-row {
+  display: flex;
+  flex-direction: row;
+}
+.page-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Global */
+html {
+  background-color: #1B1F23;
+  color: #FAFAFA;
+  padding: 0 8em;
+  scroll-behavior: smooth;
+}
+body {
+  padding: 2em 4em;
+}
+section {
+  margin-top: 2em;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Navigation */
+.logo {
+  height: 96px;
+  width: auto;
+  margin: 0;
+  border-radius: 100%;
+  border-width: 5px;
+  background-color: #FAFAFA;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 2em;
+}
+
+.nav-row {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-row li {
+  width: 10.5vw;
+}
+
+ul li {
+  list-style-type: none;
+  font-size: 18px;
+}
+
+nav ul li a {
+  font-weight: 500;
+  color: #82ACDD;
+  text-transform: uppercase;
+
+  transition: 0.28s;
+}
+nav ul li a:hover {
+  color: #C7E1FF;
+
+  transition: 0.28s;
+}
+
+/* Links */
+a {
+  color: #82ACDD;
+  text-decoration: none;
+
+  transition: 0.28s;
+}
+a:hover {
+  color: #C7E1FF;
+
+  transition: 0.28s;
+}
+
+/* Images & Videos */
+img {
+  border: 10px solid #808C8C;
+  border-radius: 20px;
+  border-style: inset;
+}
+.image {
+  margin-bottom: 2em;
+}
+video {
+  border: 10px solid #808C8C;
+  border-radius: 20px;
+  border-style: inset;
+}
+
+/* Home Page */
+video {
+  width: 35vw;
+}
+.video-gallery {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0;
+}
+.gallery-button {
+  font-size: 72px;
+  color: #82ACDD;
+  cursor: pointer;
+  margin: 0 24px;
+}
+.gallery-button:hover {
+  color: #C7E1FF;
+}
+
+/* Rates Page */
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding: 10px;
+}
+
+.services_li {
+  list-style-type: circle;
+  margin: 10px 10px;
+  margin-bottom: 10px;
+}
+
+.hours{
+  width: 100%;
+}
+
+.rates-pictures .image {
+  width: 35vw;
+}
+
+/* Events Page */
+.event{
+    flex-grow: 2;
+    margin: 60px 20px;
+}
+
+.eventimage{
+    width: 35vw;
+}
+
+/* Equipment Page */
+
+.equipment-list {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.equipment-pictures {
+  justify-content: center;
+  align-items: center;
+}
+.equipment-pictures .image {
+  width: 35vw;
+  margin: 1em;
+}
+
+
+/* Contact Page */
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Feedback Form */
+.hidden {
+    display: none;
+}
+
+#feedbackForm {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 10px solid #808C8C;
+    border-radius: 20px;
+    border-style: inset;
+    margin-top: 2em;
+}
+
+#feedbackForm label {
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.formDiv {
+    margin-bottom: 10px;
+}
+
+#feedbackForm button.submit {
+    margin: 20px 0px auto auto;
+    width: 80px;
+}
+
+.errorContainer {
+    color: red;
+    padding-left: 10px;
+    margin-left: 10px;
+    border-left: 1px red solid;
+    font-style: italic;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#feedbackForm .checkboxLabel {
+    text-align: left;
+    display: inline-block;
+}
+
+#feedbackForm .check{
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.eventForm {
+    display: flex;
+    flex-direction: row;
+}
+
+.eventOptions {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+}
+
+/* Scroll to top */
+.scroll-to-top {
+    position: fixed;
+    bottom: 11%;
+    right: 4em;
+    z-index: 99;
+    cursor: pointer;
+
+    padding: 8px;
+    border-radius: 4px;
+    color: #82ACDD;
+
+    transition: 0.28s;
+}
+
+.scroll-to-top:hover {
+  color: #C7E1FF;
+  background-color: #1B1F23;
+  box-shadow: 0 4px 16px #0E1012;
+  transform: translateY(-5%);
+
+  transition: 0.28s;
+}
+
+/* Tablet CSS */
+@media (max-width: 1150px) {
+
+/* Global */
+  html {
+    padding: 0 2em;
+  }
+
+  body {
+    font-size: 120%;
+    padding: 0px;
+  }
+
+  section {
+    margin-top: 1em;
+  }
+
+  h3 {
+    margin-top: 10px;
+  }
+
+/* Navigation */
+  .nav-row-logo {
+    width: 96px;
+  }
+
+/*Video Gallery*/
+
+  video {
+    width: 60vw;
+  }
+  .video-gallery {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+  }
+
+/*Hours Page*/
+  .hours-layout {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2em;
+  }
+
+  .services_li {
+    margin: 5px 5px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .services{
+    padding: 0px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Events */
+  .event {
+    margin: 1em;
+  }
+
+  .eventimage{
+      margin: 0;
+  }
+}
+
+/* Mobile CSS */
+@media (max-width: 850px) {
+
+/* Global */
+  html {
+    padding: 0 2em;
+  }
+
+  body{
+    font-size: 120%;
+    padding: 0px;
+  }
+
+  .page-row{
+    flex-direction: column;
+  }
+
+  section {
+    margin-top: 1em;
+    margin: 1em 1em;
+  }
+
+  h3{
+    margin-top: 10px;
+  }
+
+  #feedbackForm{
+    justify-content: flex-start;
+  }
+  #feedbackForm label{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 10px;
+    width: 60%;
+    margin-right: 20px;
+  }
+  #feedbackForm.checkboxLabel{
+    display: flex;
+    flex-direction: column;
+  }
+/* Navigation */
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 2em;
+  }
+
+  .nav-row {
+    text-align: center;
+    margin-bottom: 1em;
+    padding: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-row li {
+    width: 100vw;
+  }
+
+/* Image and Video */
+
+  .image{
+    display: none;
+  }
+
+  .event_hide{
+    display: none;
+  }
+
+/*Video Gallery*/
+
+  video {
+    width: 50vw;
+  }
+  .video-gallery {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+  }
+
+/*Hours Page*/
+  .services_li {
+    margin: 5px 5px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .services{
+    padding: 0px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+/* Scroll to top */
+  .scroll-to-top {
+    display: none;
+  }
+/* Equipment */
+  .equipment-list {
+    text-align: center;
+  }
+  .equipment-list ul {
+    padding: 0;
+  }
+}

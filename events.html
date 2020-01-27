@@ -1,0 +1,138 @@
+<!-- events.html -->
+
+<!DOCTYPE html>
+<html id="top">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Events | Cayuga Weightlifting Club</title>
+    <link rel="stylesheet" type="text/css" href="styles/site.css" />
+    <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="scripts/main.js" type="text/javascript"></script>
+  </head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-row nav-row-logo">
+        <!-- Source: (original work) Tom Diliplane -->
+        <li><a href="index.html"><img class="logo" alt="Club Logo" src="images/club-logo.png" /></a></li>
+      </ul>
+      <ul class="nav-row">
+        <li><a class="selected" href="index.html">Home</a></li>
+        <li><a href="rates.html">Rates</a></li>
+        <li><a href="equipment.html">Equipment</a></li>
+      </ul>
+      <ul class="nav-row">
+        <li><a href="hours.html">Hours</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h1>Events</h1>
+
+  <div class="page-row">
+    <div class="event">
+        <h2>Saturday Training</h2>
+        <h3>Saturday, December 7, 2019</h3>
+        <p>Train under coach Tom Dilliplane along with many other experienced members of Cayuga Weightlifting Club on Saturday mornings.</p>
+    </div>
+
+    <div class="page-column event_hide">
+        <!-- Photo by Jonathan Borba on Unsplash (https://unsplash.com/photos/zfPOelmDc-M) -->
+        <img src="images/events_lifting1.jpg" alt="A person about to lift a barbell." class="eventimage"/>
+        Source: <cite><a href="https://unsplash.com/photos/zfPOelmDc-M">Photo taken by Jonathan Borba</a></cite>
+    </div>
+  </div>
+
+  <div class="page-row">
+      <div class="event">
+          <h2>Beginner's Class</h2>
+          <h3>Sunday, December 15, 2019</h3>
+          <p>Learn the basics of weightlifting with coach Tom Dilliplane. Personalized program for those new to weighlifting.</p>
+      </div>
+
+    <div class="page-column event_hide">
+        <!-- Photo by Arthur Edelman on Unsplash (https://unsplash.com/photos/qfjuh4OLdxw) -->
+        <img src="images/events_lifting2.jpg" alt="Man lifting barbell." class="eventimage"/>
+        Source: <cite><a href="https://unsplash.com/photos/qfjuh4OLdxw">Photo taken by Arthur Edelman</a></cite>
+    </div>
+  </div>
+
+  <div class="page-row">
+    <div class="event">
+        <h2>Winter Training Program</h2>
+        <h3>Wednesday, December 18, 2019</h3>
+        <p>Start of our holiday training program under coach Tom Dilliplane. Program is customized to the experience of the lifter and includes personalized feedback.</p>
+    </div>
+
+    <div class="page-column event_hide">
+        <!-- Photo by Sven Mieke on Unsplash (https://unsplash.com/photos/Lx_GDv7VA9M) -->
+        <img src="images/events_lifting3.jpg" alt="People lifting barbells." class="eventimage"/>
+            Source: <cite><a href="https://unsplash.com/photos/Lx_GDv7VA9M">Photo taken by Sven Mieke</a></cite>
+    </div>
+  </div>
+
+  <!-- Form -->
+
+        <form id="feedbackForm" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2019fa/submit.php" novalidate>
+
+          <h2>Event Interest Form</h2>
+          <p>Let us know what events you are interested in attending.</p>
+
+          <div class="formDiv">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required/>
+          </div>
+          <span class="errorContainer hidden" id="nameError">
+            This is a required field. Please enter a valid name at least one character long.
+          </span>
+
+          <div class="formDiv">
+              <label for="email">Email: </label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required/>
+          </div>
+          <span class="errorContainer hidden" id="emailError">
+              This is a required field. Please enter your email.
+          </span>
+
+          <div class="formDiv">
+              <div class="eventForm">
+              <label>Please select any events that you are interested in attending:</label>
+              <div class="eventOptions">
+
+                  <div class="check">
+                      <input type="checkbox" id="Saturday_Training" name="Saturday_Training"/>
+                      <label for="Saturday_Training" class="checkboxLabel">Saturday Training</label>
+                  </div>
+
+                  <div class="check">
+                      <input type="checkbox" id="Beginner_Class" name="Beginner_Class"/>
+                      <label for="Beginner_Class" class="checkboxLabel">Beginner's Class</label>
+                  </div>
+
+                  <div class="check">
+                      <input type="checkbox" id="Winter" name="Winter"/>
+                      <label for="Winter" class="checkboxLabel">Winter Training Program</label>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <span class="errorContainer hidden" id="eventError">
+            This is a required field. Please choose at least one event you are interested in attending.
+        </span>
+
+          <div class="formDiv">
+              <label for="feedback">Additional Comments: </label>
+              <textarea id="feedback" name="feedback"></textarea>
+          </div>
+
+          <button type="submit" class="submit">Submit</button>
+
+        </form>
+
+  <!-- Scroll To Top -->
+  <a href="#top" aria-label="scroll to top" class="hidden scroll-to-top">Back to top</a>
+</body>
+</html>
